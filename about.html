@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://legalmaths.com/favicon.ico">
+    
+    <!-- Primary Meta Tags -->
+    <title>About Us | Legal Maths - Expert Legal Analysis & Guidance</title>
+    <meta name="title" content="About Us | Legal Maths - Expert Legal Analysis & Guidance">
+    <meta name="description" content="Learn about Legal Maths, our mission to provide accessible legal knowledge, and the expert team behind our comprehensive legal guides for individuals and businesses.">
+    <meta name="keywords" content="Legal Maths About Us, Legal Blog Mission, Legal Education, Expert Legal Team">
+    <meta name="author" content="Em nuel">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    
+    <!-- Canonical Tag -->
+    <link rel="canonical" href="https://legalmaths.com/about">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://legalmaths.com/about">
+    <meta property="og:title" content="About Us | Legal Maths - Expert Legal Analysis & Guidance">
+    <meta property="og:description" content="Learn about Legal Maths, our mission to provide accessible legal knowledge, and the expert team behind our comprehensive legal guides for individuals and businesses.">
+    <meta property="og:image" content="https://legalmaths.com/src/about-us-page.webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Legal Maths">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="https://legalmaths.com/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://legalmaths.com/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://legalmaths.com/favicon-16x16.png">
+    <link rel="manifest" href="https://legalmaths.com/site.webmanifest">
+    <link rel="mask-icon" href="https://legalmaths.com/safari-pinned-tab.svg" color="#1a365d">
+    <meta name="msapplication-TileColor" content="#1a365d">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Georgia&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #1a365d;
+            --secondary: #c53030;
+            --accent: #e2e8f0;
+            --text: #2d3748;
+            --light: #f7fafc;
+            --gray: #718096;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            line-height: 1.8;
+            color: var(--text);
+            background-color: var(--light);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        /* Header */
+        header {
+            background-color: white;
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .main-header {
+            padding: 20px 0;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-icon {
+            font-size: 2.5rem;
+            color: var(--secondary);
+            margin-right: 10px;
+        }
+
+        .logo-text {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--primary);
+        }
+
+        .logo-text span {
+            color: var(--secondary);
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        .nav-menu a {
+            font-weight: 500;
+            text-decoration: none;
+            color: var(--text);
+            position: relative;
+        }
+
+        .nav-menu a:hover {
+            color: var(--secondary);
+        }
+
+        .nav-menu a:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: var(--secondary);
+            left: 0;
+            bottom: -5px;
+            transition: var(--transition);
+        }
+
+        .nav-menu a:hover:after {
+            width: 100%;
+        }
+
+        .mobile-toggle {
+            display: none;
+            width: 40px;
+            height: 40px;
+            background: var(--primary);
+            border-radius: 4px;
+            cursor: pointer;
+            justify-content: center;
+            align-items: center;
+            transition: var(--transition);
+        }
+
+        .mobile-toggle:hover {
+            background: var(--secondary);
+        }
+
+        .mobile-toggle i {
+            color: white;
+            font-size: 1.3rem;
+        }
+
+        /* Main Content */
+        .about-wrapper {
+            margin: 60px 0;
+        }
+
+        /* Hero Section */
+        .about-hero {
+            background: linear-gradient(135deg, var(--primary), #0f1f3d);
+            color: white;
+            padding: 80px 0;
+            border-radius: 24px;
+            margin-bottom: 60px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .about-hero::after {
+            content: '\f0e7';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            bottom: -30px;
+            right: -30px;
+            font-size: 15rem;
+            opacity: 0.05;
+            color: white;
+        }
+
+        .about-hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .about-hero h1 {
+            color: white;
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .about-hero p {
+            font-size: 1.3rem;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+
+        .hero-stats {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .hero-stat {
+            text-align: center;
+        }
+
+        .hero-stat .number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--secondary);
+            line-height: 1;
+        }
+
+        .hero-stat .label {
+            font-size: 1rem;
+            margin-top: 10px;
+            opacity: 0.9;
+        }
+
+        /* Mission Section */
+        .mission-section {
+            margin: 60px 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+            position: relative;
+        }
+
+        .section-header h2 {
+            font-size: 2.2rem;
+            margin-bottom: 15px;
+        }
+
+        .section-header:after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 4px;
+            background-color: var(--secondary);
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .mission-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .mission-text {
+            flex: 1 1 500px;
+        }
+
+        .mission-text p {
+            font-size: 1.1rem;
+            margin-bottom: 25px;
+        }
+
+        .mission-text p:last-child {
+            margin-bottom: 0;
+        }
+
+        .mission-image {
+            flex: 1 1 400px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 24px;
+            padding: 40px;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .mission-image::after {
+            content: '\f0e7';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            bottom: -20px;
+            right: -20px;
+            font-size: 10rem;
+            opacity: 0.1;
+            color: white;
+        }
+
+        .mission-quote {
+            position: relative;
+            z-index: 2;
+        }
+
+        .mission-quote i {
+            font-size: 2rem;
+            color: var(--secondary);
+            margin-bottom: 20px;
+        }
+
+        .mission-quote p {
+            font-size: 1.3rem;
+            font-style: italic;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .mission-quote .author {
+            font-weight: 600;
+            color: var(--secondary);
+        }
+
+        /* Values Cards */
+        .values-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin: 50px 0;
+        }
+
+        .value-card {
+            flex: 1 1 250px;
+            background: white;
+            border-radius: 20px;
+            padding: 40px 25px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--accent);
+            transition: var(--transition);
+        }
+
+        .value-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--secondary);
+            box-shadow: 0 15px 30px rgba(197, 48, 48, 0.1);
+        }
+
+        .value-card i {
+            font-size: 3rem;
+            color: var(--secondary);
+            margin-bottom: 20px;
+        }
+
+        .value-card h3 {
+            margin-bottom: 15px;
+        }
+
+        .value-card p {
+            color: var(--gray);
+            font-size: 0.95rem;
+        }
+
+        /* Team Section */
+        .team-section {
+            margin: 80px 0;
+        }
+
+        .team-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .team-card {
+            flex: 1 1 280px;
+            background: white;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--accent);
+            transition: var(--transition);
+        }
+
+        .team-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--secondary);
+        }
+
+        .team-image {
+            height: 250px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 4rem;
+        }
+
+        .team-content {
+            padding: 25px;
+        }
+
+        .team-content h3 {
+            margin-bottom: 5px;
+        }
+
+        .team-content .role {
+            color: var(--secondary);
+            font-weight: 600;
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+        }
+
+        .team-content p {
+            font-size: 0.95rem;
+            color: var(--gray);
+            margin-bottom: 20px;
+        }
+
+        .team-social {
+            display: flex;
+            gap: 15px;
+        }
+
+        .team-social a {
+            color: var(--primary);
+            transition: var(--transition);
+        }
+
+        .team-social a:hover {
+            color: var(--secondary);
+        }
+
+        /* Stats Section */
+        .stats-section {
+            background: linear-gradient(135deg, var(--primary), #0f1f3d);
+            color: white;
+            border-radius: 24px;
+            padding: 60px 40px;
+            margin: 60px 0;
+        }
+
+        .stats-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: center;
+        }
+
+        .stats-grid .stat-item {
+            flex: 1 1 200px;
+            text-align: center;
+        }
+
+        .stats-grid .stat-number {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--secondary);
+            line-height: 1;
+        }
+
+        .stats-grid .stat-label {
+            font-size: 1rem;
+            margin-top: 15px;
+            opacity: 0.9;
+        }
+
+        /* Journey Section */
+        .journey-section {
+            margin: 60px 0;
+        }
+
+        .journey-timeline {
+            margin: 50px 0;
+        }
+
+        .journey-item {
+            display: flex;
+            gap: 40px;
+            margin-bottom: 50px;
+            flex-wrap: wrap;
+        }
+
+        .journey-year {
+            flex: 0 0 100px;
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--secondary);
+        }
+
+        .journey-content {
+            flex: 1;
+            border-left: 2px solid var(--accent);
+            padding-left: 40px;
+            position: relative;
+        }
+
+        .journey-content::before {
+            content: '';
+            position: absolute;
+            left: -8px;
+            top: 0;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: var(--secondary);
+        }
+
+        .journey-content h3 {
+            margin-bottom: 10px;
+        }
+
+        .journey-content p {
+            color: var(--gray);
+        }
+
+        /* Testimonials */
+        .testimonials-section {
+            margin: 60px 0;
+        }
+
+        .testimonials-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .testimonial-card {
+            flex: 1 1 300px;
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--accent);
+        }
+
+        .testimonial-card i {
+            color: var(--secondary);
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .testimonial-card p {
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .testimonial-author .avatar {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        .testimonial-author .info h4 {
+            margin-bottom: 5px;
+            font-size: 1rem;
+        }
+
+        .testimonial-author .info span {
+            font-size: 0.8rem;
+            color: var(--gray);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #0f1f3d;
+            color: white;
+            padding: 60px 0 30px;
+            margin-top: 60px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .footer-logo span {
+            color: var(--secondary);
+        }
+
+        .footer-about p {
+            margin-bottom: 20px;
+            opacity: 0.8;
+        }
+
+        .footer-links h3, .footer-contact h3 {
+            font-size: 1.3rem;
+            margin-bottom: 25px;
+            color: white;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .footer-links h3:after, .footer-contact h3:after {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 3px;
+            background-color: var(--secondary);
+            left: 0;
+            bottom: 0;
+        }
+
+        .footer-links ul, .footer-contact ul {
+            list-style: none;
+        }
+
+        .footer-links li, .footer-contact li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a, .footer-contact a {
+            color: white;
+            opacity: 0.8;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover, .footer-contact a:hover {
+            opacity: 1;
+            color: var(--secondary);
+            padding-left: 5px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .about-hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .about-hero p {
+                font-size: 1.1rem;
+            }
+            
+            .nav-menu {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: white;
+                flex-direction: column;
+                padding: 25px;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+                border-top: 3px solid var(--secondary);
+                gap: 0;
+            }
+            
+            .nav-menu.active {
+                display: flex;
+            }
+            
+            .nav-menu li {
+                margin: 0;
+                width: 100%;
+                border-bottom: 1px solid var(--accent);
+            }
+            
+            .nav-menu li:last-child {
+                border-bottom: none;
+            }
+            
+            .nav-menu a {
+                display: block;
+                padding: 15px 10px;
+                font-size: 1.1rem;
+                font-weight: 500;
+            }
+            
+            .nav-menu a:after {
+                display: none;
+            }
+            
+            .nav-menu a:hover {
+                background-color: var(--accent);
+                color: var(--secondary);
+                padding-left: 20px;
+            }
+            
+            .mobile-toggle {
+                display: flex;
+            }
+            
+            .hero-stats {
+                gap: 20px;
+            }
+            
+            .hero-stat .number {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .about-hero {
+                padding: 60px 20px;
+            }
+            
+            .about-hero h1 {
+                font-size: 2rem;
+            }
+            
+            .mission-grid {
+                flex-direction: column;
+            }
+            
+            .journey-item {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            .journey-content {
+                padding-left: 20px;
+            }
+            
+            .stats-grid .stat-number {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="main-header">
+            <div class="container header-container">
+                <div class="logo">
+                    <div class="logo-icon"><i class="fas fa-balance-scale"></i></div>
+                    <div class="logo-text">Legal<span>Maths</span></div>
+                </div>
+                
+                <div class="mobile-toggle" id="mobileToggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="https://legalmaths.com/">Home</a></li>
+                    <li><a href="https://legalmaths.com/personal-injury">Personal Injury</a></li>
+                    <li><a href="https://legalmaths.com/family-law">Family Law</a></li>
+                    <li><a href="https://legalmaths.com/criminal-defense">Criminal Defense</a></li>
+                    <li><a href="https://legalmaths.com/business-law">Business Law</a></li>
+                    <li><a href="https://legalmaths.com/estate-planning">Estate Planning</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <div class="about-wrapper">
+                <!-- Hero Section -->
+                <section class="about-hero">
+                    <div class="about-hero-content">
+                        <h1>Demystifying Law, Empowering Decisions</h1>
+                        <p>Legal Maths is your trusted source for clear, accurate, and practical legal information. We transform complex legal concepts into actionable knowledge.</p>
+                        
+                        
+                    </div>
+                </section>
+
+                <!-- Mission Section -->
+                <section class="mission-section">
+                    <div class="section-header">
+                        <h2>Our Mission</h2>
+                    </div>
+                    
+                    <div class="mission-grid">
+                        <div class="mission-text">
+                            <p>Legal Maths was founded on a simple belief: legal knowledge should be accessible to everyone, not just lawyers. We translate complex statutes, case law, and regulations into clear, practical guidance that helps individuals and businesses make informed decisions.</p>
+                            
+                            <p>Our team of experienced attorneys and legal writers is dedicated to providing accurate, up-to-date information that you can trust. Every article is thoroughly researched and reviewed to ensure it reflects the latest legal developments.</p>
+                            
+                            <p>Whether you're navigating a personal injury claim, starting a business, planning your estate, or facing criminal charges, Legal Maths is here to guide you through the process with confidence.</p>
+                        </div>
+                        
+                        <div class="mission-image">
+                            <div class="mission-quote">
+                                <i class="fas fa-quote-left"></i>
+                                <p>The law is not a mystery—it's a system. Our mission is to help you understand how it works and how it affects your life.</p>
+                                <div class="author">— The Legal Maths Team</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Core Values -->
+                <section>
+                    <div class="section-header">
+                        <h2>Our Core Values</h2>
+                    </div>
+                    
+                    <div class="values-grid">
+                        <div class="value-card">
+                            <i class="fas fa-check-circle"></i>
+                            <h3>Accuracy First</h3>
+                            <p>Every article is fact-checked and reviewed by legal professionals to ensure you receive reliable information.</p>
+                        </div>
+                        
+                        <div class="value-card">
+                            <i class="fas fa-book-open"></i>
+                            <h3>Clear Communication</h3>
+                            <p>We break down complex legal concepts into plain English, making the law understandable for everyone.</p>
+                        </div>
+                        
+                        <div class="value-card">
+                            <i class="fas fa-hand-holding-heart"></i>
+                            <h3>Empowerment</h3>
+                            <p>Knowledge is power. We equip you with the information you need to make confident legal decisions.</p>
+                        </div>
+                        
+                        <div class="value-card">
+                            <i class="fas fa-balance-scale"></i>
+                            <h3>Integrity</h3>
+                            <p>We present balanced, objective information—never pushing an agenda or selling legal services.</p>
+                        </div>
+                    </div>
+                </section>
+
+                
+
+                
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">Legal<span>Maths</span></div>
+                    <p>Providing expert legal analysis and insights to help individuals and businesses navigate complex legal landscapes with confidence.</p>
+                    
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="https://legalmaths.com/">Home</a></li>
+                        <li><a href="https://legalmaths.com/about">About Us</a></li>
+                        <li><a href="https://legalmaths.com/contact">Contact Us</a></li>
+                        <li><a href="https://legalmaths.com/privacy">Privacy Policy</a></li>
+                        <li><a href="https://legalmaths.com/terms">Terms Of Service</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="https://legalmaths.com/personal-injury">Personal Injury</a></li>
+                        <li><a href="https://legalmaths.com/family-law">Family Law</a></li>
+                        <li><a href="https://legalmaths.com/criminal-defense">Criminal Defense</a></li>
+                        <li><a href="https://legalmaths.com/business-law">Business Law</a></li>
+                        <li><a href="https://legalmaths.com/estate-planning">Estate Planning</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Legalmaths Blog. All rights reserved. <a href="https://legalmaths.com/disclaimer" style="color: inherit;">Disclaimer.</a> This website is for informational purposes only and does not constitute legal advice.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile navigation toggle
+        const mobileToggle = document.getElementById('mobileToggle');
+        const navMenu = document.getElementById('navMenu');
+        const icon = mobileToggle.querySelector('i');
+
+        mobileToggle.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+            
+            if (navMenu.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!navMenu.contains(event.target) && !mobileToggle.contains(event.target)) {
+                navMenu.classList.remove('active');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+    </script>
+</body>
+</html>
