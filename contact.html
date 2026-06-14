@@ -775,55 +775,34 @@
                         <div class="contact-form">
                             <h2 style="margin-bottom: 20px;">Send Us a Message</h2>
                             
-                            <form id="contactForm">
-                                <div class="form-row">
-                                    <div class="form-group">
-                                        <label class="form-label" for="firstName">First Name *</label>
-                                        <input type="text" class="form-control" id="firstName" required>
-                                    </div>
-                                    
-                                    <div class="form-group">
-                                        <label class="form-label" for="lastName">Last Name *</label>
-                                        <input type="text" class="form-control" id="lastName" required>
-                                    </div>
-                                </div>
-                                
-                                <div class="form-group">
-                                    <label class="form-label" for="email">Email Address *</label>
-                                    <input type="email" class="form-control" id="email" required>
-                                </div>
-                                
-                                <div class="form-group">
-                                    <label class="form-label" for="phone">Phone Number</label>
-                                    <input type="tel" class="form-control" id="phone">
-                                </div>
-                                
-                                <div class="form-group">
-                                    <label class="form-label" for="subject">Subject *</label>
-                                    <select class="form-control" id="subject" required>
-                                        <option value="" disabled selected>Select a subject</option>
-                                        <option value="general">General Inquiry</option>
-                                        <option value="media">Media Request</option>
-                                        <option value="feedback">Feedback on Article</option>
-                                        <option value="topic">Topic Suggestion</option>
-                                        <option value="technical">Technical Issue</option>
-                                        <option value="other">Other</option>
-                                    </select>
-                                </div>
-                                
-                                <div class="form-group">
-                                    <label class="form-label" for="message">Message *</label>
-                                    <textarea class="form-control" id="message" required></textarea>
-                                </div>
-                                
-                                <button type="submit" class="submit-btn">
-                                    <i class="fas fa-paper-plane"></i> Send Message
-                                </button>
-                                
-                                <div class="form-disclaimer">
-                                    <p>By submitting this form, you agree to our <a href="/privacy">Privacy Policy</a> and <a href="/terms">Terms of Service</a>. This form is for informational inquiries only and does not create an attorney-client relationship.</p>
-                                </div>
-                            </form>
+                            <style>
+.form-wrap { max-width: 480px; margin: 2rem auto; background: #fff; border: 0.5px solid rgba(0,0,0,0.12); border-radius: 12px; padding: 2rem; }
+.form-title { font-size: 20px; font-weight: 500; margin: 0 0 0.25rem; }
+.form-sub { font-size: 14px; color: #666; margin: 0 0 1.75rem; }
+.field { margin-bottom: 1.25rem; }
+.field label { display: block; font-size: 13px; font-weight: 500; color: #555; margin-bottom: 6px; }
+.field input, .field textarea { width: 100%; box-sizing: border-box; padding: 10px 14px; font-size: 15px; background: #f5f5f3; border: 0.5px solid rgba(0,0,0,0.2); border-radius: 8px; outline: none; font-family: inherit; resize: none; transition: border-color 0.15s, box-shadow 0.15s; }
+.field input:focus, .field textarea:focus { border-color: #378ADD; box-shadow: 0 0 0 3px rgba(55,138,221,0.12); }
+.field textarea { min-height: 120px; }
+.submit-btn { width: 100%; padding: 11px; font-size: 15px; font-weight: 500; color: #fff; background: #185FA5; border: none; border-radius: 8px; cursor: pointer; font-family: inherit; transition: background 0.15s; }
+.submit-btn:hover { background: #0C447C; }
+</style>
+
+<div class="form-wrap">
+  <p class="form-title">Get in touch</p>
+  <p class="form-sub">Fill out the form below and I'll get back to you shortly.</p>
+  <form action="https://formspree.io/f/mkoakkpp" method="POST">
+    <div class="field">
+      <label for="email">Your email</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com">
+    </div>
+    <div class="field">
+      <label for="message">Your message</label>
+      <textarea id="message" name="message" placeholder="What's on your mind?"></textarea>
+    </div>
+    <button type="submit" class="submit-btn">Send message</button>
+  </form>
+</div>
                         </div>
                     </div>
                 </section>
