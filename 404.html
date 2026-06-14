@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://legalmaths.com/favicon.ico">
+    
+    <!-- Primary Meta Tags -->
+    <title>404 - Page Not Found | Legal Maths</title>
+    <meta name="title" content="404 - Page Not Found | Legal Maths">
+    <meta name="description" content="The page you're looking for cannot be found. Explore our legal guides, search our library, or return to the Legal Maths homepage.">
+    <meta name="keywords" content="404, Page Not Found, Legal Resources">
+    <meta name="robots" content="noindex, follow">
+    <meta name="language" content="English">
+    
+    <!-- Canonical Tag -->
+    <link rel="canonical" href="https://legalmaths.com/404">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://legalmaths.com/404">
+    <meta property="og:title" content="404 - Page Not Found | Legal Maths">
+    <meta property="og:description" content="The page you're looking for cannot be found. Explore our legal guides, search our library, or return to the Legal Maths homepage.">
+    <meta property="og:image" content="https://legalmaths.com/src/404-page.webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Legal Maths">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="https://legalmaths.com/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://legalmaths.com/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://legalmaths.com/favicon-16x16.png">
+    <link rel="manifest" href="https://legalmaths.com/site.webmanifest">
+    <link rel="mask-icon" href="https://legalmaths.com/safari-pinned-tab.svg" color="#1a365d">
+    <meta name="msapplication-TileColor" content="#1a365d">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Georgia&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #1a365d;
+            --secondary: #c53030;
+            --accent: #e2e8f0;
+            --text: #2d3748;
+            --light: #f7fafc;
+            --gray: #718096;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            line-height: 1.8;
+            color: var(--text);
+            background-color: var(--light);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        /* Header */
+        header {
+            background-color: white;
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .main-header {
+            padding: 20px 0;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-icon {
+            font-size: 2.5rem;
+            color: var(--secondary);
+            margin-right: 10px;
+        }
+
+        .logo-text {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--primary);
+        }
+
+        .logo-text span {
+            color: var(--secondary);
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        .nav-menu a {
+            font-weight: 500;
+            text-decoration: none;
+            color: var(--text);
+            position: relative;
+        }
+
+        .nav-menu a:hover {
+            color: var(--secondary);
+        }
+
+        .nav-menu a:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: var(--secondary);
+            left: 0;
+            bottom: -5px;
+            transition: var(--transition);
+        }
+
+        .nav-menu a:hover:after {
+            width: 100%;
+        }
+
+        .mobile-toggle {
+            display: none;
+            width: 40px;
+            height: 40px;
+            background: var(--primary);
+            border-radius: 4px;
+            cursor: pointer;
+            justify-content: center;
+            align-items: center;
+            transition: var(--transition);
+        }
+
+        .mobile-toggle:hover {
+            background: var(--secondary);
+        }
+
+        .mobile-toggle i {
+            color: white;
+            font-size: 1.3rem;
+        }
+
+        /* Main Content */
+        main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            min-height: calc(100vh - 200px);
+        }
+
+        .error-wrapper {
+            margin: 60px 0;
+        }
+
+        /* 404 Hero Section */
+        .error-hero {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .error-code {
+            font-size: 8rem;
+            font-weight: 800;
+            color: var(--secondary);
+            line-height: 1;
+            text-shadow: 4px 4px 0 rgba(197, 48, 48, 0.1);
+        }
+
+        .error-icon {
+            font-size: 6rem;
+            color: var(--secondary);
+            margin: 30px 0;
+            opacity: 0.7;
+        }
+
+        .error-title {
+            font-size: 2rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        .error-message {
+            font-size: 1.1rem;
+            color: var(--gray);
+            max-width: 500px;
+            margin: 0 auto 30px;
+        }
+
+        /* Search Box */
+        .search-container {
+            max-width: 500px;
+            margin: 30px auto;
+            display: flex;
+            gap: 10px;
+        }
+
+        .search-input {
+            flex: 1;
+            padding: 15px 20px;
+            border: 1px solid var(--accent);
+            border-radius: 8px;
+            font-size: 1rem;
+            font-family: 'Georgia', serif;
+            transition: var(--transition);
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: var(--secondary);
+            box-shadow: 0 0 0 3px rgba(197, 48, 48, 0.1);
+        }
+
+        .search-button {
+            background: var(--secondary);
+            color: white;
+            border: none;
+            padding: 0 25px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+
+        .search-button:hover {
+            background: #9b2c2c;
+        }
+
+        /* Quick Links Grid */
+        .quick-links {
+            margin: 50px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .section-title h2 {
+            font-size: 1.8rem;
+            color: var(--primary);
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        .section-title h2:after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 3px;
+            background-color: var(--secondary);
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .link-category {
+            background: white;
+            border-radius: 20px;
+            padding: 25px;
+            border: 1px solid var(--accent);
+            transition: var(--transition);
+        }
+
+        .link-category:hover {
+            border-color: var(--secondary);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(197, 48, 48, 0.1);
+        }
+
+        .category-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid var(--accent);
+        }
+
+        .category-header i {
+            font-size: 2rem;
+            color: var(--secondary);
+        }
+
+        .category-header h3 {
+            margin: 0;
+            color: var(--primary);
+        }
+
+        .link-list {
+            list-style: none;
+        }
+
+        .link-list li {
+            margin-bottom: 12px;
+        }
+
+        .link-list a {
+            color: var(--text);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: var(--transition);
+        }
+
+        .link-list a:hover {
+            color: var(--secondary);
+            padding-left: 5px;
+        }
+
+        .link-list a i {
+            color: var(--secondary);
+            font-size: 0.8rem;
+        }
+
+        /* Popular Articles */
+        .popular-articles {
+            margin: 50px 0;
+        }
+
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .article-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid var(--accent);
+            transition: var(--transition);
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .article-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--secondary);
+            box-shadow: 0 10px 25px rgba(197, 48, 48, 0.1);
+        }
+
+        .article-img {
+            height: 150px;
+            background-color: var(--accent);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .article-content {
+            padding: 20px;
+        }
+
+        .article-category {
+            background-color: var(--accent);
+            color: var(--primary);
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .article-title {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            line-height: 1.4;
+            color: var(--primary);
+        }
+
+        .article-excerpt {
+            font-size: 0.85rem;
+            color: var(--gray);
+        }
+
+        /* Home Button */
+        .home-button {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .btn-home {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--primary);
+            color: white;
+            padding: 14px 35px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .btn-home:hover {
+            background: var(--secondary);
+            transform: translateY(-3px);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #0f1f3d;
+            color: white;
+            padding: 60px 0 30px;
+            margin-top: 60px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .footer-logo span {
+            color: var(--secondary);
+        }
+
+        .footer-about p {
+            margin-bottom: 20px;
+            opacity: 0.8;
+        }
+
+        .footer-links h3, .footer-contact h3 {
+            font-size: 1.3rem;
+            margin-bottom: 25px;
+            color: white;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .footer-links h3:after, .footer-contact h3:after {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 3px;
+            background-color: var(--secondary);
+            left: 0;
+            bottom: 0;
+        }
+
+        .footer-links ul, .footer-contact ul {
+            list-style: none;
+        }
+
+        .footer-links li, .footer-contact li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a, .footer-contact a {
+            color: white;
+            opacity: 0.8;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover, .footer-contact a:hover {
+            opacity: 1;
+            color: var(--secondary);
+            padding-left: 5px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .error-code {
+                font-size: 6rem;
+            }
+            
+            .nav-menu {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: white;
+                flex-direction: column;
+                padding: 25px;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+                border-top: 3px solid var(--secondary);
+                gap: 0;
+            }
+            
+            .nav-menu.active {
+                display: flex;
+            }
+            
+            .nav-menu li {
+                margin: 0;
+                width: 100%;
+                border-bottom: 1px solid var(--accent);
+            }
+            
+            .nav-menu li:last-child {
+                border-bottom: none;
+            }
+            
+            .nav-menu a {
+                display: block;
+                padding: 15px 10px;
+                font-size: 1.1rem;
+                font-weight: 500;
+            }
+            
+            .nav-menu a:after {
+                display: none;
+            }
+            
+            .nav-menu a:hover {
+                background-color: var(--accent);
+                color: var(--secondary);
+                padding-left: 20px;
+            }
+            
+            .mobile-toggle {
+                display: flex;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .error-code {
+                font-size: 4rem;
+            }
+            
+            .error-icon {
+                font-size: 4rem;
+            }
+            
+            .error-title {
+                font-size: 1.5rem;
+            }
+            
+            .search-container {
+                flex-direction: column;
+            }
+            
+            .articles-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .links-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="main-header">
+            <div class="container header-container">
+                <div class="logo">
+                    <div class="logo-icon"><i class="fas fa-balance-scale"></i></div>
+                    <div class="logo-text">Legal<span>Maths</span></div>
+                </div>
+                
+                <div class="mobile-toggle" id="mobileToggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="https://legalmaths.com/">Home</a></li>
+                    <li><a href="https://legalmaths.com/personal-injury">Personal Injury</a></li>
+                    <li><a href="https://legalmaths.com/family-law">Family Law</a></li>
+                    <li><a href="https://legalmaths.com/criminal-defense">Criminal Defense</a></li>
+                    <li><a href="https://legalmaths.com/business-law">Business Law</a></li>
+                    <li><a href="https://legalmaths.com/estate-planning">Estate Planning</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <div class="error-wrapper">
+                <!-- 404 Hero -->
+                <div class="error-hero">
+                    <div class="error-code">404</div>
+                    <div class="error-icon">
+                        <i class="fas fa-scale-balanced"></i>
+                    </div>
+                    <h1 class="error-title">Page Not Found</h1>
+                    <p class="error-message">The page you're looking for might have been moved, deleted, or never existed. Don't worry—we're here to help you find what you need.</p>
+                    
+                    <!-- Home Button -->
+                <div class="home-button">
+                    <a href="https://legalmaths.com/" class="btn-home">
+                        <i class="fas fa-home"></i> Return to Homepage
+                    </a>
+                </div>
+                </div>
+
+                <!-- Quick Links Grid -->
+                <div class="quick-links">
+                    <div class="section-title">
+                        <h2>Explore Our Legal Resources</h2>
+                    </div>
+                    
+                    <div class="links-grid">
+                        <div class="link-category">
+                            <div class="category-header">
+                                <i class="fas fa-car-crash"></i>
+                                <h3>Personal Injury</h3>
+                            </div>
+                            <ul class="link-list">
+                                <li><a href="https://legalmaths.com/car-accident-legal-steps"><i class="fas fa-chevron-right"></i> Car Accident Legal Steps</a></li>
+                                <li><a href="https://legalmaths.com/personal-injury-claim-guide-2026"><i class="fas fa-chevron-right"></i> Claim Guide 2026</a></li>
+                                <li><a href="https://legalmaths.com/slip-and-fall-legal-rights"><i class="fas fa-chevron-right"></i> Slip and Fall Rights</a></li>
+                                <li><a href="https://legalmaths.com/dog-bite-lawsuit-guide"><i class="fas fa-chevron-right"></i> Dog Bite Lawsuits</a></li>
+                                <li><a href="https://legalmaths.com/medical-malpractice-when-to-sue"><i class="fas fa-chevron-right"></i> Medical Malpractice</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="link-category">
+                            <div class="category-header">
+                                <i class="fas fa-users"></i>
+                                <h3>Family Law</h3>
+                            </div>
+                            <ul class="link-list">
+                                <li><a href="https://legalmaths.com/divorce-laws-assets-debt-property"><i class="fas fa-chevron-right"></i> Divorce Asset Division</a></li>
+                                <li><a href="https://legalmaths.com/child-custody-judges-guide"><i class="fas fa-chevron-right"></i> Child Custody Guide</a></li>
+                                <li><a href="https://legalmaths.com/child-support-laws-guide"><i class="fas fa-chevron-right"></i> Child Support Laws</a></li>
+                                <li><a href="https://legalmaths.com/prenuptial-agreements-2026-guide"><i class="fas fa-chevron-right"></i> Prenuptial Agreements</a></li>
+                                <li><a href="https://legalmaths.com/grandparents-rights-guide"><i class="fas fa-chevron-right"></i> Grandparents' Rights</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="link-category">
+                            <div class="category-header">
+                                <i class="fas fa-gavel"></i>
+                                <h3>Criminal Defense</h3>
+                            </div>
+                            <ul class="link-list">
+                                <li><a href="https://legalmaths.com/dui-charges-guide"><i class="fas fa-chevron-right"></i> DUI Charges Explained</a></li>
+                                <li><a href="https://legalmaths.com/arrest-rights-guide"><i class="fas fa-chevron-right"></i> Your Arrest Rights</a></li>
+                                <li><a href="https://legalmaths.com/criminal-defense-strategies-guide"><i class="fas fa-chevron-right"></i> Defense Strategies</a></li>
+                                <li><a href="https://legalmaths.com/felony-vs-misdemeanor-guide"><i class="fas fa-chevron-right"></i> Felony vs Misdemeanor</a></li>
+                                <li><a href="https://legalmaths.com/expungement-guide"><i class="fas fa-chevron-right"></i> Record Expungement</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Popular Articles -->
+                <div class="popular-articles">
+                    <div class="section-title">
+                        <h2>Popular Articles</h2>
+                    </div>
+                    
+                    <div class="articles-grid">
+                        <a href="https://legalmaths.com/personal-injury-lawyer-secrets" class="article-card">
+                            <div class="article-img" style="background-image: url('https://legalmaths.com/src/personal-injury-lawyer-secrets.webp');"></div>
+                            <div class="article-content">
+                                <span class="article-category">Legal Strategy</span>
+                                <h3 class="article-title">Personal Injury Lawyer Secrets: How Attorneys Build Winning Cases</h3>
+                                <p class="article-excerpt">Discover the insider strategies top personal injury attorneys use to build winning cases.</p>
+                            </div>
+                        </a>
+                        
+                        <a href="https://legalmaths.com/wills-vs-trusts-guide-2026" class="article-card">
+                            <div class="article-img" style="background-image: url('https://legalmaths.com/src/wills-vs-trusts-guide-2026.webp');"></div>
+                            <div class="article-content">
+                                <span class="article-category">Estate Planning</span>
+                                <h3 class="article-title">Wills vs Trusts 2026: Which Estate Plan Is Best for Your Assets?</h3>
+                                <p class="article-excerpt">Compare wills vs trusts for 2026 estate planning. Learn about probate avoidance and new fee changes.</p>
+                            </div>
+                        </a>
+                        
+                        <a href="https://legalmaths.com/self-defense-laws-guide" class="article-card">
+                            <div class="article-img" style="background-image: url('https://legalmaths.com/src/self-defense-laws-guide.webp');"></div>
+                            <div class="article-content">
+                                <span class="article-category">Criminal Defense</span>
+                                <h3 class="article-title">Self-Defense Laws Explained: When Using Force Is Legal</h3>
+                                <p class="article-excerpt">Understand self-defense laws in 2026: imminent threat, castle doctrine, and stand your ground.</p>
+                            </div>
+                        </a>
+                        
+                        <a href="https://legalmaths.com/start-business-legal-checklist" class="article-card">
+                            <div class="article-img" style="background-image: url('https://legalmaths.com/src/start-business-legal-checklist.webp');"></div>
+                            <div class="article-content">
+                                <span class="article-category">Business Law</span>
+                                <h3 class="article-title">How To Start a Business Legally: The Complete Legal Checklist for Entrepreneurs</h3>
+                                <p class="article-excerpt">Your essential 2026 legal checklist for starting a business. Avoid costly startup mistakes.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">Legal<span>Maths</span></div>
+                    <p>Providing expert legal analysis and insights to help individuals and businesses navigate complex legal landscapes with confidence.</p>
+                    
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="https://legalmaths.com/">Home</a></li>
+                        <li><a href="https://legalmaths.com/about">About Us</a></li>
+                        <li><a href="https://legalmaths.com/contact">Contact Us</a></li>
+                        <li><a href="https://legalmaths.com/privacy">Privacy Policy</a></li>
+                        <li><a href="https://legalmaths.com/terms">Terms Of Service</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="https://legalmaths.com/personal-injury">Personal Injury</a></li>
+                        <li><a href="https://legalmaths.com/family-law">Family Law</a></li>
+                        <li><a href="https://legalmaths.com/criminal-defense">Criminal Defense</a></li>
+                        <li><a href="https://legalmaths.com/business-law">Business Law</a></li>
+                        <li><a href="https://legalmaths.com/estate-planning">Estate Planning</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Legalmaths Blog. All rights reserved. <a href="https://legalmaths.com/disclaimer" style="color: inherit;">Disclaimer.</a> This website is for informational purposes only and does not constitute legal advice.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile navigation toggle
+        const mobileToggle = document.getElementById('mobileToggle');
+        const navMenu = document.getElementById('navMenu');
+        const icon = mobileToggle.querySelector('i');
+
+        mobileToggle.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+            
+            if (navMenu.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!navMenu.contains(event.target) && !mobileToggle.contains(event.target)) {
+                navMenu.classList.remove('active');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        // Search functionality
+        const searchInput = document.getElementById('searchInput');
+        const searchButton = document.getElementById('searchButton');
+
+        function performSearch() {
+            const query = searchInput.value.trim().toLowerCase();
+            if (query) {
+                // In a real implementation, this would redirect to search results
+                alert(`Searching for: "${query}"\n\nIn a production environment, this would redirect to search results page.`);
+            } else {
+                alert('Please enter a search term.');
+            }
+        }
+
+        searchButton.addEventListener('click', performSearch);
+        searchInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                performSearch();
+            }
+        });
+    </script>
+</body>
+</html>
